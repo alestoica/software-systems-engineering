@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LogInController">
+
+    <Label alignment="CENTER" layoutX="19.0" layoutY="14.0" prefHeight="99.0" prefWidth="562.0" style="-fx-font-size: 18; -fx-font-weight: bold;" text="Log in to your account">
+      <font>
+         <Font name="System Bold Italic" size="12.0" />
+      </font></Label>
+
+    <GridPane layoutX="155.0" layoutY="170.0" prefHeight="99.0" prefWidth="290.0">
+
+        <columnConstraints>
+
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="202.00001525878906" minWidth="10.0" prefWidth="99.66666666666666" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="252.0" minWidth="10.0" prefWidth="190.99999999999997" />
+
+        </columnConstraints>
+
+        <rowConstraints>
+            <RowConstraints />
+            <RowConstraints maxHeight="76.0" minHeight="10.0" prefHeight="60.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="76.66665649414062" minHeight="8.666666666666657" prefHeight="72.0" />
+
+        </rowConstraints>
+
+        <Label prefHeight="47.0" prefWidth="111.0" text="Id: " GridPane.rowIndex="1" />
+        <Label prefHeight="39.0" prefWidth="111.0" text="Password: " GridPane.rowIndex="2" />
+
+        <TextField fx:id="textFieldId" prefHeight="30.0" prefWidth="252.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+        <PasswordField fx:id="textFieldPassword" prefHeight="30.0" prefWidth="252.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+
+    </GridPane>
+
+    <Button alignment="CENTER" layoutX="251.0" layoutY="304.0" mnemonicParsing="false" onAction="#handleLogIn" prefHeight="28.0" prefWidth="98.0" text="Log In">
+
+        <padding>
+
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+
+        </padding>
+
+    </Button>
+
+   <ComboBox fx:id="comboBoxAccountType" layoutX="225.0" layoutY="113.0" prefWidth="150.0" />
+
+</AnchorPane>

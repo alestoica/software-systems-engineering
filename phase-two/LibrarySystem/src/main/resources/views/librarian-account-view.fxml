@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="474.0" prefWidth="781.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LibrarianAccountController">
+    <Label layoutX="185.0" layoutY="64.0" text="Members">
+        <font>
+            <Font name="System Italic" size="13.0" />
+        </font>
+    </Label>
+    <Label layoutX="567.0" layoutY="64.0" prefHeight="19.0" prefWidth="37.0" text="Books">
+        <font>
+            <Font name="System Italic" size="13.0" />
+        </font>
+    </Label>
+    <Button layoutX="163.0" layoutY="368.0" mnemonicParsing="false" text="Add member" />
+    <Button layoutX="136.0" layoutY="403.0" mnemonicParsing="false" text="Update member details" />
+    <Button layoutX="158.0" layoutY="437.0" mnemonicParsing="false" text="Delete member" />
+    <Button layoutX="552.0" layoutY="380.0" mnemonicParsing="false" text="Add book" />
+    <Button layoutX="541.0" layoutY="415.0" mnemonicParsing="false" text="Remove book" />
+    <Label fx:id="welcomeLabel" alignment="CENTER" layoutX="198.0" layoutY="24.0" prefHeight="27.0" prefWidth="410.0">
+        <font>
+            <Font name="System Bold" size="18.0" />
+        </font>
+    </Label>
+    <TableView fx:id="tableViewMembers" layoutX="19.0" layoutY="93.0" prefHeight="265.0" prefWidth="384.0">
+      <columns>
+          <TableColumn fx:id="tableColumnName" prefWidth="128" text="name" />
+          <TableColumn fx:id="tableColumnCNP" prefWidth="128" text="CNP" />
+          <TableColumn fx:id="tableColumnPhoneNumber" prefWidth="128" text="phone" />
+      </columns>
+    </TableView>
+    <TableView fx:id="tableViewBooks" layoutX="412.0" layoutY="93.0" prefHeight="265.0" prefWidth="348.0">
+      <columns>
+          <TableColumn fx:id="tableColumnTitle" prefWidth="116.0" text="title" />
+          <TableColumn fx:id="tableColumnAuthor" prefWidth="116.0" text="author" />
+          <TableColumn fx:id="tableColumnStatus" prefWidth="116.0" text="status" />
+      </columns>
+    </TableView>
+</AnchorPane>
